@@ -1,0 +1,6 @@
+from models.produto import Produto
+
+p1 = Produto('PS5', 1500)
+p2 = Produto('XBox', 2750.66)
+print(p1)
+print(p2)
