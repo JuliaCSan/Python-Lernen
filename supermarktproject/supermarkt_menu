@@ -1,0 +1,39 @@
+from typing import List, Dict
+from time import sleep
+from models.produto import Produto
+from utils.helpers import format_float_str_moeda
+
+produtos: List[Produto] = []
+carrinho: List[Dict[Produto, int]] = []
+
+def main() -> None:
+    menu()
+
+def cadastrar_produto():
+    print('Cadastrando produto')
+    menu()
+
+def sair():
+    print('Até breve!!!')
+    sleep(4)
+    exit(0)
+
+def menu() -> None:
+    print('='*45)
+    print('Escolha sua opção:')
+    print('1. cadastrar produto')
+    print('2. Comprar produto')
+    print('3. Sair')
+    print('=' * 45)
+    opcao = int(input('Escolha a sua opção: '))
+    if opcao ==1:
+        cadastrar_produto()
+    elif opcao ==2:
+        pass
+    elif opcao ==3:
+        sair()
+    else:
+        print('Opção invalida')
+
+if __name__ == '__main__':
+    main()
