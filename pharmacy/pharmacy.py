@@ -21,7 +21,7 @@ def cadastrar_clientes() -> None:
         input('Digite o telefone do cliente: ')
         input('Digite o cpf do cliente: ')
     print('Cliente cadastrado com sucesso.')
-    cadastrar_clientes()
+cadastrar_clientes()
 
 def cadastrar_produto() -> None:
     clientes = input('Deseja cadastrar um novo produto? (S/N)')
